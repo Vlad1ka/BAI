@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #00AFEA;
+}
+
+.header{
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    &__logo{
+        width: 265px;
+        display: flex;
+        align-items: center;
+
+        p{
+            margin-left: 25px;
+            color: #FFF;
+            font-weight: 700;
+        }
+    }
+
+    &__address{
+        margin: 25px 0 0 469px;
+        font-size: 14px;
+        color: #F5F5F5;
+    }
+
+    &__socialMedia{
+        width: 115px;
+        display: flex;
+        justify-content: space-between;
+        margin: 19px 0 0 0;
+    }
+}
