@@ -152,6 +152,29 @@ body{
     }
 }
 
+.modal-window{
+    width: 525px;
+    height: 510px;
+    background-color: #005C9F;
+    font-size: 20px;
+    font-family: RobotoMono;
+    line-height: 26.38px;
+    color: #FFF;
+    padding: 20px 25px 20px 25px;
+    // Скрыто по умолчанию
+    display: none;
+    // Затемнение фона
+    background-color: rgb(0, 0, 0);
+    // Фон на нижнем слое
+    z-index: 1;
+    
+    p{
+        width: 475px;
+        height: 420px;
+        margin: 13px 0 0 0;
+    }
+}
+
 .events{
     width: 1140px;
     height: 700px;
@@ -212,7 +235,8 @@ body{
     padding: 50px 90px 30px 90px;
 
     &__content{
-
+        width: 1100px;
+        margin: 0 auto;
         &__basic{
             display: flex;
 
