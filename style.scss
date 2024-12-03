@@ -84,3 +84,201 @@ body{
     }
 }
 
+
+
+
+
+
+.cards{
+    width: 1100px;
+    height: 764px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+    &__title{
+        width: 810px;
+        font-family: RobotoMono;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 42.2px;
+        color: #fff;
+    }
+
+    &__wrapper{
+        width: 1060px;
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0 0 40px;
+
+        &__card{
+            width: 300px;
+            height: 310px;
+            background-color: #fff;
+            padding: 15px;
+
+            p{
+                margin-top: 15px;
+                color: #000000;
+                font-family: RobotoMono;
+                font-size: 20px;
+                line-height: 26.38px;
+            }
+
+            &__btn{
+                width: 128px;
+                height: 42px;
+                background-color: #005C9F;
+                border: none;
+                border-radius: 50px;
+                font-family: RobotoMono;
+                font-size: 16px;
+                color: #fff;
+                margin-top: 15px;
+            }
+
+            &__btn:hover{
+                background-color: #891B56;
+            }
+    
+            &__btn:focus{
+                background-color: #891B56;
+            }
+        }
+    }
+
+    &__wrapper:nth-of-type(3){
+        width: 680px;
+        margin-left: 230px;
+    }
+}
+
+.events{
+    width: 1140px;
+    height: 700px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+    &__event{
+        width: 1140px;
+        height: 210px;
+        padding: 25px;
+        background-color: #fff;
+        margin-top: 35px;
+        display: flex;
+
+        &__title{
+            width: 174px;
+            font-family: RobotoMono;
+            font-size: 36px;
+            line-height: 47.48px;
+            color: #005C9F;
+        }
+
+        &__text{
+            width: 593px;
+            font-family: RobotoMono;
+            font-size: 24px;
+            line-height: 31.65px;
+            color: #005C9F;
+            margin: 0 0 0 42px;
+        }
+
+        &__btn{
+            width: 197px;
+            height: 56px;
+            border: none;
+            border-radius: 50px;
+            background-color: #005C9F;
+            margin: 0 0 0 90px;
+            font-family: RobotoMono;
+            font-size: 20px;
+            font-weight: 700;
+            color: #FFF;
+        }
+
+        &__btn:hover{
+            background-color: #891B56;
+        }
+
+        &__btn:focus{
+            background-color: #891B56;
+        }
+    }
+}
+
+.footer{
+    background-color: #005C9F;
+    margin: 100px 0 0 0;
+    padding: 50px 90px 30px 90px;
+
+    &__content{
+
+        &__basic{
+            display: flex;
+
+            &__column{
+
+                p{
+                    font-family: RobotoMono;
+                    font-size: 16px;
+                    line-height: 21.1px;
+                    color: #F5F5F5;
+                    margin: 15px 0 0 10px;
+                }
+
+                &__logo{
+                    width: 265px;
+                    display: flex;
+                    align-items: center;
+
+                    p{
+                        margin: 0 0 0 25px;
+                        color: #FFF;
+                        font-weight: 700;
+                        font-family: RobotoMono;
+                    }
+                }
+            }
+
+            &__contacts{
+                padding: 10px 0 0 10px;
+                margin: 0 0 0 30px;
+                color: #F5F5F5;
+                font-family: RobotoMono;
+                font-size: 16px;
+                line-height: 21.1px;
+
+                p{
+                    margin-top: 15px;
+                }
+
+                p:nth-of-type(1){
+                    margin: 0;
+                }
+            }
+        }
+
+        hr{
+            border: 3px solid #F5F5F5;
+            margin: 30px 0 0 0;
+        }
+
+        &__copyright{
+            height: 30px;
+            margin: 30px 0 0 0;
+            font-family: RobotoMono;
+            font-size: 14px;
+            color: #F5F5F5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            &__icons{
+                width: 200px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+}
