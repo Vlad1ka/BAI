@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>БАИ</title>
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__container__columns">
+                <div class="header__container__columns__logo">
+                    <img src="./img/лого.png" alt="logo">
+                    <p>Восточный экономический форум</p>
+                </div>
+                <div class="header__container__columns__address">
+                    <p>г.Хабаровск ул.Сибирякова д.123</p>
+                </div>
+                <div class="header__container__columns__social_media">
+                    <img src="./img/telegram.png" alt="telegram">
+                    <img src="./img/ok.png" alt="ok">
+                    <img src="./img/vk.png" alt="vk">
+                </div>
+            </div>
+            <hr>
+        </div>
+    </header>
+
+    <!-- Навигация -->
+    <div class="search">
+        <div class="search__nav">
+            <a href="#cards-void"><button class="search__nav__btn">Мероприятия</button></a>
+            <a href="#contacts-void"><button class="search__nav__btn">Контакты</button></a>
+            <a href="#events-void"><button class="search__nav__btn">Регистрация</button></a>
+        </div>
+    </div>
+    
+
+    <!-- Слайдер -->
+    <div class="slider">
+        <img src="./img/slide1.png" alt="slide" class="slider-image">
+        <img src="./img/slide2.png" alt="slide" style="display: none;" class="slider-image">
+        <img src="./img/slide3.png" alt="slide" style="display: none;" class="slider-image">
+    </div>
+
+    <div id="cards-void" class="void"></div>
+        <img src="./img//slide3.png" alt="slide" style="display: none;" class="slider-image">
+    </div>
+
+    <!-- Карточки -->
+    <div id="events" class="cards">
+        <div class="cards__title">
+            <p>Мероприятия восточного экономического форума</p>
+        </div>
+        <div class="cards__wrapper">
+            <div class="cards__wrapper__card">
+                <img src="./img/мероп1.png" alt="event">
+                <p>ВиноГрад</p>
+                <button data-title="ВиноГрад" class="cards__wrapper__card__btn">Перейти</button>
+            </div>
+            <div class="cards__wrapper__card">
+                <img src="./img/мероп2.png" alt="event">
+                <p>Росконгресс клуб</p>
+                <button data-title="Росконгресс клуб" class="cards__wrapper__card__btn">Перейти</button>
+            </div>
+            <div class="cards__wrapper__card">
+                <img src="./img/мероп3.png" alt="event">
+                <p>Гостиная Губернатора</p>
+                <button data-title="Гостиная Губернатора" class="cards__wrapper__card__btn">Перейти</button>
+            </div>
+        </div>
+        <div class="cards__wrapper">
+            <div class="cards__wrapper__card">
+                <img src="./img/мероп4.png" alt="event">
+                <p>Урбан</p>
+                <button data-title="Урбан" class="cards__wrapper__card__btn">Перейти</button>
+            </div>
+            <div class="cards__wrapper__card">
+                <img src="./img/мероп5.png" alt="event">
+                <p>Территория инноваций</p>
+                <button data-title="Территория инноваций" class="cards__wrapper__card__btn">Перейти</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно мероприятий-->
+    <div id="modal-window" class="modal-window">
+        <div class="modal-window__close">
+            <img src="./img/x.png" alt="x">
+        </div>
+        <p></p>
+    </div>
+    <div class="opacity"></div>
+
+    <!-- Модальное окно регистрации -->
+    <div class="modal-window_reg">
+        <div class="modal-window_reg__close">
+            <img src="./img/x2.png" alt="x">
+        </div>
+        <input type="text" placeholder="ФИО" class="modal-window_reg-input">
+        <input type="email" placeholder="Email" class="modal-window_reg-input">
+        <input type="text" placeholder="Телефон" class="modal-window_reg-input">
+        <input type="date" placeholder="Дата" class="modal-window_reg-input">
+        <div class="modal-window_reg__checkboxes">
+            <div class="modal-window_reg__checkboxes__checkbox">
+                <input type="checkbox">
+                <span>Очно</span>
+            </div>
+            <div class="modal-window_reg__checkboxes__checkbox">
+                <input type="checkbox">
+                <span>Заочно</span>
+            </div>
+            <div class="modal-window_reg__checkboxes__btn">
+                <button>Зарегистрироваться</button>
+                <button id="btn-reg" class="input-clear">Очистить</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="events-void" class="void"></div>
+
+    <!-- Мероприятия -->
+    <div class="events">
+        <div class="events__event">
+            <div class="events__event__title">
+                <p>День сокола</p>
+            </div>
+            <div class="events__event__text">
+                <p>Второй Международный форум «День сокола» состоится 3 сентября во Владивостоке в стартовый день IX Восточного экономического форума.</p>
+            </div>
+            <button class="events__event__btn">Регистрация</button>
+        </div>
+        <div class="events__event">
+            <div class="events__event__title">
+                <p>Здоровое общество</p>
+            </div>
+            <div class="events__event__text">
+                <p>Мероприятие объединяет ведущих экспертов индустрии здоровья, представителей государственной власти, лидеров мнений и популяризаторов ЗОЖ-культуры</p>
+            </div>
+            <button class="events__event__btn">Регистрация</button>
+        </div>
+        <div class="events__event">
+            <div class="events__event__title">
+                <p>Улица дальнего востока</p>
+            </div>
+            <div class="events__event__text">
+                <p>Демонстрация достижений, уникальности культуры, обычаев, кухни, экономического потенциала  регионов Дальнего Востока России</p>
+            </div>
+            <button class="events__event__btn">Регистрация</button>
+        </div>
+    </div>
+
+    <div id="contacts-void" class="void"></div>
+
+    <!-- Подвал -->
+     <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__content__basic">
+                <div class="footer__content__basic__column">
+                    <div class="footer__content__basic__column__logo">
+                        <img src="./img/лого.png" alt="logo">
+                        <p>Восточный экономический форум</p>
+                    </div>
+                    <a href="#cards-void">Мероприятия</a>
+                    <a href="#events-void">Регистрация</a>
+                </div>
+                <div class="footer__content__basic__contacts">
+                    <p>Контакты</p>
+                    <p>г.Хабаровск ул.Сибирякова д.123</p>
+                    <p>+7 (499) 7000 111</p>
+                    <p>info@forumvostok.ru</p>
+                </div>
+
+            </div>
+            <hr>
+            <div class="footer__content__copyright">
+                <p>Разработка и ведение сайта - KostyaAndVlad © 2020-2024</p>
+                <div class="footer__content__copyright__icons">
+                    <img src="./img/youtube.png" alt="icon">
+                    <img src="./img/gmail.png" alt="icon">
+                    <img src="./img/telegram.png" alt="icon">
+                    <img src="./img/ok.png" alt="icon">
+                    <img src="./img/vk.png" alt="icon">
+                </div>
+            </div>
+        </div>
+     </footer>
+
+     <script src="./js/slider.js"></script>
+     <script src="./js/modal-window.js"></script>
+</body>
+</html>
